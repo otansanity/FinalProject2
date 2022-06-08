@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">FinalProj2</string>
+    <string name="invalid_name">Text field is empty</string>
+</resources>

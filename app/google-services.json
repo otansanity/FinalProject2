@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "428287389868",
+    "firebase_url": "https://diyhubb-default-rtdb.firebaseio.com",
+    "project_id": "diyhubb",
+    "storage_bucket": "diyhubb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428287389868:android:88acfb6bd3fe111ebaef09",
+        "android_client_info": {
+          "package_name": "com.diy.finalproj2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428287389868-u00qdupha4fa29j02v80vg6vftmr9vnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUmmQz8YZ7Tz0qbDnkl9Ta16VvpdGimtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428287389868-u00qdupha4fa29j02v80vg6vftmr9vnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428287389868:android:7b5a87c0d88e862abaef09",
+        "android_client_info": {
+          "package_name": "com.example.crudapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428287389868-u00qdupha4fa29j02v80vg6vftmr9vnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUmmQz8YZ7Tz0qbDnkl9Ta16VvpdGimtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428287389868-u00qdupha4fa29j02v80vg6vftmr9vnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:428287389868:android:1de74af956e172e9baef09",
+        "android_client_info": {
+          "package_name": "com.example.diyhubb"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "428287389868-u00qdupha4fa29j02v80vg6vftmr9vnk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUmmQz8YZ7Tz0qbDnkl9Ta16VvpdGimtc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "428287389868-u00qdupha4fa29j02v80vg6vftmr9vnk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
