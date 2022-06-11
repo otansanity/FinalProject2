@@ -63,10 +63,11 @@ public class updateBook extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_update_book);
 
+        progressDialog = new ProgressDialog(this);
+
         updateTitle = findViewById(R.id.editText_update_titleup);
         updateAuthor = findViewById(R.id.editText_update_authorup);
         updatePages = findViewById(R.id.editText_update_pagesup);
-        updateCell = findViewById(R.id.editText_update_cellNumup);
         updateManuBy = findViewById(R.id.editText_update_manufacturedup);
 
         changephotoup = findViewById(R.id.changePhoto2up);
@@ -84,7 +85,6 @@ public class updateBook extends AppCompatActivity {
             a = extras.getString("bookTitle");
             b = extras.getString("bookAuthor");
             c = extras.getString("bookPages");
-            d = extras.getString("cellNumber");
             e = extras.getString("manufacturedBy");
             f = extras.getString("bookId");
             g = extras.getString("bookImage");
@@ -92,7 +92,7 @@ public class updateBook extends AppCompatActivity {
             updateTitle.setText(a);
             updateAuthor.setText(b);
             updatePages.setText(c);
-            updateCell.setText(d);
+
             updateManuBy.setText(e);
             Glide.with(getApplicationContext()).load(g).into(setBookImageup);
         }
@@ -120,14 +120,13 @@ public class updateBook extends AppCompatActivity {
                 String title = updateTitle.getText().toString();
                 String author = updateAuthor.getText().toString();
                 String pages = updatePages.getText().toString();
-                String cell = updateCell.getText().toString();
+
                 String manufacture = updateManuBy.getText().toString();
 
                 //map.put("bookImage", url);
                 map.put("bookTitle", title);
                 map.put("bookAuthor", author);
                 map.put("bookPages", pages);
-                map.put("cellNumber", cell);
                 map.put("manufacturedBy", manufacture);
 
                 reference.child("BookList").child(f).updateChildren(map);

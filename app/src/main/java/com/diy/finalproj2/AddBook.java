@@ -69,7 +69,7 @@ public class AddBook extends AppCompatActivity {
         bookTitle = findViewById(R.id.editText_update_title);
         bookAuthor = findViewById(R.id.editText_update_author);
         bookPages = findViewById(R.id.editText_update_pages);
-        cellphoneNum = findViewById(R.id.editText_update_cellNum);
+
         manufacturedBy = findViewById(R.id.editText_update_manufactured);
         setBookImage = findViewById(R.id.addBookImage);
         changePhoto = findViewById(R.id.changePhoto2);
@@ -84,7 +84,7 @@ public class AddBook extends AppCompatActivity {
 
         awesomeValidation.addValidation(this,R.id.editText_update_title, RegexTemplate.NOT_EMPTY,R.string.invalid_name);
 
-        awesomeValidation.addValidation(this,R.id.editText_update_cellNum, "[5-9]{1}[0-9]{9}",R.string.invalid_name);
+
 
 
         changePhoto.setOnClickListener(new View.OnClickListener() {
@@ -153,7 +153,6 @@ public class AddBook extends AppCompatActivity {
                                 String title = bookTitle.getText().toString();
                                 String author = bookAuthor.getText().toString();
                                 String pages = bookPages.getText().toString();
-                                String cell = cellphoneNum.getText().toString();
                                 String manufacture = manufacturedBy.getText().toString();
                                 id = UUID.randomUUID().toString();
                                 cutid = id.substring(0,11);
@@ -165,7 +164,6 @@ public class AddBook extends AppCompatActivity {
                                 map.put("bookTitle", title);
                                 map.put("bookAuthor", author);
                                 map.put("bookPages", pages);
-                                map.put("cellNumber", cell);
                                 map.put("manufacturedBy", manufacture);
                                 map.put("bookId",cutid);
                                 reference.child("BookList").child(cutid).setValue(map);

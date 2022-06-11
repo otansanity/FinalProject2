@@ -43,7 +43,6 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
         BookList bookList = list.get(position);
         holder.bookTitle.setText(bookList.getBookTitle());
         holder.bookAuthor.setText(bookList.getBookAuthor());
-        holder.cellNumber.setText("Cell #: "+ bookList.getCellNumber());
         holder.bookPages.setText("Pages: "+bookList.getBookPages());
         holder.manufacturedBy.setText("Made in: "+bookList.getManufacturedBy());
 
@@ -78,7 +77,6 @@ public class BookAdapter extends RecyclerView.Adapter<BookAdapter.ViewHolder> {
 
             bookTitle = itemView.findViewById(R.id.book_title);
             bookAuthor = itemView.findViewById(R.id.book_author);
-            cellNumber = itemView.findViewById(R.id.cell_txt);
             bookPages = itemView.findViewById(R.id.book_pages);
             manufacturedBy = itemView.findViewById(R.id.manufactured_txt);
             bookImage = itemView.findViewById(R.id.bookIMG);

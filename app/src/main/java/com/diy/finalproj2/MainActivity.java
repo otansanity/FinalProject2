@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -71,9 +73,26 @@ public class MainActivity extends AppCompatActivity {
 
 
         logout.setOnClickListener(view -> {
-            mAuth.signOut();
-            startActivity(new Intent(MainActivity.this,LoginPage.class));
-        });
+            AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+            builder.setTitle("Logout");
+            builder.setMessage("Are you sure you want to logout?");
+            builder.setPositiveButton("YES", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    FirebaseAuth.getInstance().signOut();
+                    finish();
+                    startActivity(new Intent(MainActivity.this, LoginPage.class));
+                }
+            });
+            builder.setNegativeButton("NO", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            builder.show();
+
+    });
 
         addBook.setOnClickListener(new View.OnClickListener() {
             @Override
